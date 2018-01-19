@@ -16,7 +16,7 @@ class RestaurantLocation(models.Model):
 	@property
 	def title(self):
 		return self.name 
-
+#nono
 
 def rl_pre_save_receiver(sender, instance, *args, **kwargs):
 	if not instance.slug:
