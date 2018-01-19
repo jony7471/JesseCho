@@ -17,7 +17,7 @@ class RestaurantLocation(models.Model):
 	def title(self):
 		return self.name 
 #nono
-
+#this is for testing git
 def rl_pre_save_receiver(sender, instance, *args, **kwargs):
 	if not instance.slug:
 		instance.slug = unique_slug_generator(instance)
